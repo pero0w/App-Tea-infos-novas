@@ -1,0 +1,8 @@
+{
+  "name": "TEAAMO",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

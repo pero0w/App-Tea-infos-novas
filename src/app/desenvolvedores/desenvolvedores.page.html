@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/folder"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="title">
+    DESENVOLVEDORES
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-accordion-group [multiple]="true">
+    <ion-accordion value="1">
+      <ion-item slot="header">
+        <ion-label>Desenvolvedores Pioneiros</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <p>Mirela Boavista Pacheco (ex-aluna)</p>
+        <p>Vitória Sindin Xavier (ex-aluna)</p>
+      </div>
+    </ion-accordion>
+
+    <ion-accordion value="2">
+      <ion-item slot="header">
+        <ion-label>Desenvolvedores Atuais</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <p>Lucas Santos Silva (aluno)</p>
+        <p>Mariélen da Silva Lopes (aluna)</p>
+        <p>Natanel Farias Lucena (aluno)</p>
+        <p>Nathan Teixeira de Souza (aluno)</p>
+      </div>
+    </ion-accordion>
+
+    <ion-accordion value="3">
+      <ion-item slot="header">
+        <ion-label>Associação Parceira</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <p>TEA'amo: Associação formada por mães e avós atípicas, buscando a união para melhorar a qualidade de vida de todos os Autistas.</p>
+        <p>Mantenedora: Fátima Rocha da Silva</p>
+      </div>
+    </ion-accordion>
+
+    <ion-accordion value="4">
+      <ion-item slot="header">
+        <ion-label>Orientadores</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <p>Professor José Henrique Lopes da Silva</p>
+        <p>Professor Leonardo Santana Benevides</p>
+      </div>
+    </ion-accordion>
+    <div class="fixed-footer">
+      <p>CopyRight</p>
+      <p>Escola Estadual de Ensino Médio Brigadeiro José da Silva Paes</p>
+    </div>
+  </ion-accordion-group>
+</ion-content>
