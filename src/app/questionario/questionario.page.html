@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/folder"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="title">MONITORAMENTO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+<h1>QUESTIONÁRIO</h1>
+  <ion-list>
+    <ion-item *ngFor="let pergunta of perguntas; let i = index">
+      <ion-label>{{ pergunta.texto }}</ion-label>
+      <ion-toggle [(ngModel)]="respostas[i]"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block"(click)="enviarRespostas()">Enviar</ion-button>
+</ion-content>

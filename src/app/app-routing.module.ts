@@ -20,6 +20,14 @@ const routes: Routes = [
     path: 'desenvolvedores',
     loadChildren: () => import('./desenvolvedores/desenvolvedores.module').then( m => m.DesenvolvedoresPageModule)
   },
+  {
+    path: 'questionario',
+    loadChildren: () => import('./questionario/questionario.module').then( m => m.QuestionarioPageModule)
+  },
+  {
+    path: 'graficos',
+    loadChildren: () => import('./graficos/graficos.module').then( m => m.GraficosPageModule)
+  },
 ];
 
 
